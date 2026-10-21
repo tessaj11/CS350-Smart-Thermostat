@@ -1,26 +1,33 @@
 # CS350-Smart-Thermostat
 Raspberry Pi smart thermostat project for CS 350 using Python, temperature sensing, LED indicators, LCD display, and UART communication
 
-## Project Overview
+For CS 350, I worked with a Raspberry Pi to learn how software interacts with hardware. I selected two projects for my portfolio: the Morse Code LED project from Milestone Three and the Thermostat Final Project.
 
-For this course, I worked with a Raspberry Pi to learn how software communicates with hardware components. My projects involved writing Python code to control LEDs, working with GPIO pins, using buttons and an LCD display, and creating state machine diagrams. The main goal was to understand how software and hardware work together and how to develop programs that respond to different inputs.
+The Morse Code project involved using Python to control red and blue LEDs to display Morse code messages. The program used a state machine to control the timing of each light and a button to switch between SOS and OK. It also included a 16x2 LCD display to show the message being transmitted.
+
+For the final project, I developed Python code for a thermostat system that could switch between heating, cooling, and off states. The program was designed to read temperature data from a sensor, adjust a temperature setpoint using buttons, control LED indicators, display information on an LCD, and send updates through serial communication. I completed the code, but hardware issues prevented me from fully testing the final system.
 
 ## What did you do particularly well?
 
-I think one thing I did well was troubleshooting problems instead of immediately giving up when something didn't work. Throughout the course, I had to figure out wiring issues, code errors, and problems getting the hardware to respond correctly. I became more comfortable using the Raspberry Pi terminal and testing different parts of my programs to figure out what was happening.
+I think I did well with troubleshooting and learning how the different hardware components worked together. The Morse Code project helped me become more comfortable working with GPIO pins, LEDs, buttons, and state machines. I also got better at navigating the Raspberry Pi terminal and identifying problems in my code or wiring.
 
 ## Where could you improve?
 
-One area I could improve is planning my hardware connections before starting the programming portion. I learned that even when the code looks correct, something as simple as a loose connection or incorrect GPIO pin can prevent everything from working. I also want to become more confident debugging hardware and software problems without having to go through as much trial and error.
+I could improve how I plan and test my hardware connections before putting everything together. During the final project, I ran into hardware issues that made it difficult to test the program. I learned that having the code written is only one part of completing a hardware project. I want to get better at testing individual components first so I can identify problems earlier.
 
 ## What tools and resources are you adding to your support network?
 
-This course helped me become more familiar with Python, Raspberry Pi, GPIO libraries, Linux commands, and draw.io for creating state machine diagrams. I also learned how useful documentation, course resources, and troubleshooting examples can be when working with unfamiliar hardware. These are resources I can continue using in future projects.
+I gained experience using Python, Raspberry Pi, GPIO libraries, Linux commands, and draw.io for state machine diagrams. I also became more familiar with using course resources and documentation to troubleshoot errors. These are tools I can continue using as I work on other programming projects.
 
 ## What skills from this project will transfer to other projects or coursework?
 
-The biggest skills I gained were troubleshooting, debugging, and understanding how different parts of a system communicate. Working with state machines also helped me understand how to organize program behavior based on different conditions. I can apply these skills to future programming assignments, software testing, and projects that involve multiple components working together.
+Troubleshooting and debugging are probably the biggest skills I will take from this course. I also learned how useful state machines are for organizing a program that needs to respond to different inputs. Understanding how software communicates with hardware can help me with future programming projects, especially those involving embedded systems or connected devices.
 
 ## How did you make this project maintainable, readable, and adaptable?
 
-I worked on organizing the Python code into different sections based on what each part of the program needed to do. Using functions and states helped separate responsibilities and made it easier to identify where problems were occurring. Keeping the hardware controls and program logic organized also makes it easier to update the code if I want to change the messages, timing, or hardware behavior later.
+I used functions and state machines to organize the programs into different sections based on their responsibilities. For example, the Morse Code program separates the LED behavior, message selection, and display updates. The thermostat code also separates temperature readings, LED controls, button inputs, and display updates. This makes it easier to understand what each part of the program does and where changes would need to be made. It also allows the programs to be adjusted later without having to rewrite everything.
+
+## Portfolio Artifacts
+
+- **Milestone Three – Morse Code LED Project:** Python application using LEDs, a button, an LCD display, and a state machine to transmit Morse code messages.
+- **Final Project – Thermostat:** Python application designed to control thermostat states, read temperature data, display information, and communicate through a serial connection. Hardware testing was not completed due to equipment issues.
